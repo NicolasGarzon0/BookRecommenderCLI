@@ -4,7 +4,7 @@ import pandas as pd
 df_dataset = pd.read_csv('PATH_TO_DATASET') #https://www.kaggle.com/datasets/austinreese/goodreads-books
 
 # Select relevant columns
-df_dataset = df_dataset[['id', 'title', 'original_title','rating_count','average_rating','description','genre_and_votes','amazon_redirect_link']]
+df_dataset = df_dataset[['id', 'title', 'original_title', 'rating_count','description','genre_and_votes','amazon_redirect_link']]
 
 # Drop rows with missing values
 df_dataset.dropna(inplace=True)
@@ -28,7 +28,7 @@ df_dataset.drop(columns=['rating_count','original_title'], inplace=True)
 df_dataset.set_index('id', inplace=True)
 
 # Rename columns for clarity
-df_dataset.rename(columns={'average_rating': 'rate', 'genre_and_votes': 'genre', 'amazon_redirect_link': 'amazon link'}, inplace=True)
+df_dataset.rename(columns={ 'genre_and_votes': 'genre', 'amazon_redirect_link': 'amazon link'}, inplace=True)
 
 #Save as CSV
 df_dataset.to_csv("Books Data.csv")
