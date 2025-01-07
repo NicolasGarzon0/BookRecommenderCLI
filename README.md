@@ -3,7 +3,7 @@
 **BookRecommenderCLI** is a command-line application that recommends books based on user input. By entering the name of a book, the user receives 5 book recommendations, each with an Amazon link. The app generates these recommendations by analyzing the book's description and genre, leveraging feature vectors and cosine similarity to calculate similarity. 
 
 ## App in Action
-![App Demo](Images/Image%201.jpg)  <!-- Ensure the image path is correct -->
+![App Demo](App%20Demo.GIF)  <!-- Ensure the image path is correct -->
 
 ## Running The App
 
